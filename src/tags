@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AVG_POOLING	opBackend.hpp	/^	AVG_POOLING,$/;"	e	enum:pooling_mode
+CONV_HP_INIT	main.cc	6;"	d	file:
+DATA_FLOAT32	opTensor.hpp	/^	DATA_FLOAT32,$/;"	e	enum:tDataType_t
+DATA_FLOAT32_SIZE	opTensor.hpp	15;"	d
+DATA_HALF	opTensor.hpp	/^	DATA_HALF,$/;"	e	enum:tDataType_t
+DATA_HALF_SIZE	opTensor.hpp	17;"	d
+DATA_INT32	opTensor.hpp	/^	DATA_INT32,$/;"	e	enum:tDataType_t
+DATA_INT32_SIZE	opTensor.hpp	16;"	d
+MAX_DIMS	opTensor.hpp	7;"	d
+MAX_POOLING	opBackend.hpp	/^	MAX_POOLING,$/;"	e	enum:pooling_mode
+TENSOR_NCHW	opTensor.hpp	/^	TENSOR_NCHW,$/;"	e	enum:tFormat_t
+TENSOR_NHWC	opTensor.hpp	/^	TENSOR_NHWC,$/;"	e	enum:tFormat_t
+__CUDNNOPDRIVER_HPP__	cudnnOpDriver.hpp	2;"	d
+__OPBACKEND_HPP__	opBackend.hpp	2;"	d
+__OPTENSOR_HPP__	opTensor.hpp	2;"	d
+bias	opBackend.hpp	/^	int bias;$/;"	m	struct:conv_hyperparameters
+checkCUDNN	cudnnOpDriver.hpp	8;"	d
+conv_hp_t	opBackend.hpp	/^} conv_hp_t;$/;"	t	typeref:struct:conv_hyperparameters
+conv_hyperparameters	opBackend.hpp	/^typedef struct conv_hyperparameters {$/;"	s
+conv_pooling_t	opBackend.hpp	/^} conv_pooling_t;$/;"	t	typeref:struct:pooling_hyperparameters
+conv_relu_t	opBackend.hpp	/^} conv_relu_t;$/;"	t	typeref:struct:relu_hyperparameters
+createConvModule	cudnnOpDriver.cc	/^void cudnnOpDriver::createConvModule(int n, int in_c, int out_c, int in_h,$/;"	f	class:cudnnOpDriver
+cudnnOpDriver	cudnnOpDriver.hpp	/^		cudnnOpDriver() {$/;"	f	class:cudnnOpDriver
+cudnnOpDriver	cudnnOpDriver.hpp	/^class cudnnOpDriver: public opBackend {$/;"	c
+cudnn_datatype	cudnnOpDriver.hpp	/^inline cudnnDataType_t cudnn_datatype(tDataType_t dtype)$/;"	f
+cudnn_tensor_format	cudnnOpDriver.hpp	/^inline cudnnTensorFormat_t cudnn_tensor_format(tFormat_t layout)$/;"	f
+data	opTensor.hpp	/^		void *data;$/;"	m	class:opTensor
+dilation	opBackend.hpp	/^	int dilation;$/;"	m	struct:conv_hyperparameters
+dims	opTensor.hpp	/^		int dims;$/;"	m	class:opTensor
+dtype	opTensor.hpp	/^		tDataType_t dtype;$/;"	m	class:opTensor
+format	opTensor.hpp	/^		tFormat_t format;$/;"	m	class:opTensor
+groups	opBackend.hpp	/^	int groups;$/;"	m	struct:conv_hyperparameters
+handle	cudnnOpDriver.hpp	/^		cudnnHandle_t handle;$/;"	m	class:cudnnOpDriver
+in_place	opBackend.hpp	/^	int in_place;$/;"	m	struct:relu_hyperparameters
+kernel_size	opBackend.hpp	/^	int *kernel_size;$/;"	m	struct:pooling_hyperparameters
+kernel_size	opBackend.hpp	/^	int kernel_size;$/;"	m	struct:conv_hyperparameters
+main	main.cc	/^int main(void)$/;"	f
+opBackend	opBackend.hpp	/^		opBackend() {}$/;"	f	class:opBackend
+opBackend	opBackend.hpp	/^class opBackend {$/;"	c
+opTensor	opTensor.hpp	/^		opTensor(int dims, int *shape, tFormat_t format, tDataType_t dtype) {$/;"	f	class:opTensor
+opTensor	opTensor.hpp	/^class opTensor {$/;"	c
+padding	opBackend.hpp	/^	int padding;$/;"	m	struct:conv_hyperparameters
+pooling_hyperparameters	opBackend.hpp	/^typedef struct pooling_hyperparameters {$/;"	s
+pooling_mode	opBackend.hpp	/^	int pooling_mode;$/;"	m	struct:pooling_hyperparameters
+pooling_mode	opBackend.hpp	/^enum pooling_mode {$/;"	g
+rand_float	main.cc	/^static void rand_float(float * vec, int len){$/;"	f	file:
+relu_hyperparameters	opBackend.hpp	/^typedef struct relu_hyperparameters {$/;"	s
+shape	opTensor.hpp	/^		int shape[MAX_DIMS];$/;"	m	class:opTensor
+sizeof_dtype	opTensor.hpp	/^static inline int sizeof_dtype(tDataType_t t) {$/;"	f
+stride	opBackend.hpp	/^	int *stride;$/;"	m	struct:pooling_hyperparameters
+stride	opBackend.hpp	/^	int stride;$/;"	m	struct:conv_hyperparameters
+tDataType_t	opTensor.hpp	/^enum tDataType_t {$/;"	g
+tFormat_t	opTensor.hpp	/^enum tFormat_t {$/;"	g
+~opTensor	opTensor.hpp	/^		~opTensor() {$/;"	f	class:opTensor
